@@ -1,0 +1,120 @@
+body{
+	background-color: #f8f8f8;
+}
+.register_main{
+	background-color: #fff;
+    min-height: 565px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+/* 左边 */
+.register_adv {
+    float: left;
+    width: 600px;
+    height: 565px;
+    position: relative;
+    text-align: center;
+}
+.register_adv a {
+    display: table-cell;
+    width: 600px;
+    height: 565px;
+    vertical-align: middle;
+}
+/* 右边 */
+.register_form {
+    width: 600px;
+    float: left;
+    padding-top: 38px;
+}
+.register_form ul li{
+	width: 100%;
+	line-height: 25px;
+	height: 66px;
+	position: relative;
+}
+.register_form ul li div{
+	float: left;
+}
+
+/*打钩小点*/
+.register_form ul li>i{
+	position: absolute;
+	left: 510px;
+	top: 10px;
+	width: 16px;
+	height: 16px;
+	background-image: url(../imges/login_icons_new.png);
+	background-repeat: no-repeat;
+	background-position: -25px -2px;
+	opacity: 0;
+}
+
+.label{
+	width: 136px;
+    font-size: 16px;
+    color: #8c8c8c;
+    line-height: 40px;
+    padding-right: 24px;
+    text-align: right;
+    font-size: 14px;
+}
+.info{
+	width: 340px;
+    height: 38px;
+    line-height: 38px;
+    border: 1px solid #d2d2d2;
+}
+.info input{
+	padding: 0 10px;
+    width: 320px;
+	border: none;
+	outline: none;
+}
+.tip{
+	width: 342px;
+    height: 26px;
+    font-size: 12px;
+    float: left;
+    padding-left: 160px;
+	color: #F42424;
+	opacity: 0;
+}
+
+/*阅读协议*/
+.submit_btn .agreement{
+	padding-left: 160px;
+}
+#checkbox1{
+	position: relative;
+	top: 2px;
+}
+.submit_btn .agreement label{
+	font-size: 12px;
+}
+
+/*提交*/
+.submit_btn .sub_btn{
+	padding-left: 160px;
+	
+}
+.submit_btn .sub_btn input{
+	width: 342px;
+    height: 50px;
+    line-height: 50px;
+    border: 0;
+    font-size: 16px;
+    font-weight: bold;
+    outline: 0;
+    background-color: #F42424;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+.submit_btn .sub_btn input:hover{
+	background-color: #b72c2c;
+}
+.foot_buttom{
+	background-color: #f8f8f8 !important;
+}

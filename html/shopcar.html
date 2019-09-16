@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>购物车</title>
+		<link rel="stylesheet" type="text/css" href="../css/cssreset.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/particulars.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/shopcar.css"/>
+		<link rel="shortcut icon" href="../imges/favicon.ico" />
+		<link rel="stylesheet" type="text/css" href="../imges/font_1365901_mlj3r1k3jk/iconfont.css"/>
+		<script src="../js/jquery-1.11.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/public.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/shopcar.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<nav class="siteNav">
+			<div class="container">
+				<div class="siteNav_center">
+					<div class="login_left">
+						<div class="address"><i class="iconfont icon-dizhi"></i>柳州</div>
+						<div class="address_list">
+							
+						</div>
+						<div class="denglu">
+							<a href="#" class="link_login">请登陆</a>
+							<a href="#" class="link_regist">免费注册</a>
+						</div>
+					</div>
+					<ul></ul>
+				</div>
+			</div>
+		</nav>
+		<header class="whead">
+			<div class="container">
+				<div class="header_main">
+					<div class="car_logo">
+						<div class="logo_img">
+							<a href="#"><img src="../imges/user_login_logo.gif"/></a>
+						</div>
+						<div class="tit">
+							购物车(<em id="car_num">0</em>)
+						</div>
+					</div>
+					<div class="wt_search">
+						<from>
+							<input type="text" name="search_text" id="search_text" placeholder="珠江钢琴"/>
+							<button id="car_search_button">
+								<i class="iconfont icon-search"></i>
+							</button>
+						</from>
+					</div>
+				</div>
+			</div>
+		</header>
+		<section class="car_section">
+			<div class="container">
+				<div class="car_main">
+					<div class="car_tit">
+						<ul class="car_schedule">
+							<li class="curr">
+								<span>1.我的购物车</span><i class="iconfont icon-xiangyou1"></i>
+							</li>
+							<li>
+								<span>2.填写订单信息</span><i class="iconfont icon-xiangyou1"></i>
+							</li>
+							<li>
+								<span>3.成功提交订单</span><i class="iconfont icon-xiangyou1"></i>
+							</li>
+						</ul>
+						<div class="sp_area">
+							<span class="txt">配送至</span>
+							<div class="select">
+								<div class="tit">
+									山西&nbsp;长治&nbsp;沁县
+									<i class="iconfont icon-xiangxia"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="car_table">
+						<div class="car_head">
+							<div class="checkbox1">
+								<!--<input type="checkbox" name="checkbox" id="checkbox" value="" />-->
+								<label for="checkbox" >全选</label>
+							</div>
+							<div class="c_good">商品</div>
+							<div class="c_props"></div>
+							<div class="c_price">单价(元)</div>
+							<div class="c_num">数量</div>
+							<div class="c_add">小计</div>
+							<div class="c_cao">操作</div>
+						</div>
+						<div class="car_content">
+							<div class="item_list">
+								<div class="good_item">
+									<div class="item_form">
+										<div class="w-check">
+											<div class="char_check">
+												<!-- <input type="checkbox" name="checkboxb" id="checkboxb" value="" style="display: inline-block;"/> -->
+												<label for="checkboxb" id="checkboxb" class="havClass"> </label>
+											</div>
+										</div>
+										<div class="w_good">
+											<div class="good_item">
+												<div class="p_img">
+													<a href="#"><img src="../imges/articles13.jpg"/></a>
+												</div>
+												<div class="item_msg">
+													<a href="#">天鹅口琴c调 12孔48音半音阶口琴成人儿童初学 专业比赛演奏乐器</a>
+												</div>
+											</div>
+										</div>
+										<div class="w_props">颜色分类:哑光黑色+半音阶教材 </div>
+										<div class="w_price">
+											<span id="pice"><em>￥</em><span class="onepirce">449.00</span></span>
+										</div>
+										<div class="w_num">
+											<div class="number_btn">
+												<input type="text" class="buy_num" id="buy_num" value="1" />
+												<div class="buy_btn">
+													<a href="javascript:void(0);"><i class="iconfont icon-xiangshang1"></i></a>
+													<a href="javascript:void(0);"><i class="iconfont icon-xiangxia"></i></a>
+												</div>
+											</div>
+											<div class="yh">
+												有货
+											</div>
+										</div>
+										<div class="w_add">
+											<span>
+												<em>￥</em>
+												<span class="li_add">449.00</span>
+											</span>
+										</div>
+										<div class="w_cao">
+											<a href="#">删除</a>
+											<a href="#">收藏</a>
+										</div>
+									</div>
+								</div>
+								<div class="good_item">
+									<div class="item_form">
+										<div class="w-check">
+											<div class="char_check">
+												<!-- <input type="checkbox" name="checkboxb" id="checkboxb" value="" style="display: inline-block;"/> -->
+												<label for="checkboxb" id="checkboxb" class="havClass"> </label>
+											</div>
+										</div>
+										<div class="w_good">
+											<div class="good_item">
+												<div class="p_img">
+													<a href="#"><img src="../imges/articles13.jpg"/></a>
+												</div>
+												<div class="item_msg">
+													<a href="#">天鹅口琴c调 12孔48音半音阶口琴成人儿童初学 专业比赛演奏乐器</a>
+												</div>
+											</div>
+										</div>
+										<div class="w_props">颜色分类:哑光黑色+半音阶教材 </div>
+										<div class="w_price">
+											<span id="pice"><em>￥</em><span class="onepirce">449.00</span></span>
+										</div>
+										<div class="w_num">
+											<div class="number_btn">
+												<input type="text" class="buy_num" id="buy_num" value="1" />
+												<div class="buy_btn">
+													<a href="javascript:void(0);"><i class="iconfont icon-xiangshang1"></i></a>
+													<a href="javascript:void(0);"><i class="iconfont icon-xiangxia"></i></a>
+												</div>
+											</div>
+											<div class="yh">
+												有货
+											</div>
+										</div>
+										<div class="w_add">
+											<span>
+												<em>￥</em>
+												<span class="li_add">449.00</span>
+											</span>
+										</div>
+										<div class="w_cao">
+											<a href="#">删除</a>
+											<a href="#">收藏</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="car_footer">
+							<div class="car_check checkbox1">
+								<label for="checkbox_footer" id="checkbox_footer">全选</label>
+							</div>
+							<div class="opration">
+								<a href="javasript:void(0);">删除选中的商品</a>
+								<a href="javasript:void(0);">移到我的收藏</a>
+							</div>
+							<div class="car_footrt_right">
+								<div class="btn_area">
+									<input type="button" name="" id="btn_area" value="去支付" />
+								</div>
+								<div class="price_num">
+									<span>总价(不含运费)：</span><span id="addPrice"><em>￥</em>0.00</span>
+								</div>
+								<div class="reduce_sum">
+									<span>已节省：</span>
+									<span id="save_num">0</span>
+								</div>
+								<div class="amount_sum">
+									已选择<em id="amount_sum">0</em>件商品
+								</div>
+							</div>
+						</div>	
+					</div>
+				</div>
+				<div class="no_interest">
+					<div class="container">
+						<div class="no_interestMain">
+							<div class="ftit">猜你喜欢</div>
+							<ul>
+								<li>
+									<a href="#">
+										<div class="in_img"><img src="../imges/interest01.jpg" ></div>
+										<div class="in_name">ANDIR小提琴手工实木虎纹演奏小提琴 初学考级演奏小提琴</div>
+										<div class="in_price">
+											<span><em>￥</em>3450.00</span>
+											<span><em>￥</em>3680.00</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="in_img" class="in_img"><img src="../imges/interest02.jpg" ></div>
+										<div class="in_name">ANDIR小提琴初学考级演奏儿童小提琴手工实木虎纹雕花演奏小提琴</div>
+										<div class="in_price">
+											<span><em>￥</em>3450.00</span>
+											<span><em>￥</em>3680.00</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="in_img" class="in_img"><img src="../imges/interest03.jpg" ></div>
+										<div class="in_name">ANDIR小提琴初学考级演奏儿童小提琴手工实木虎纹雕花</div>
+										<div class="in_price">
+											<span><em>￥</em>3450.00</span>
+											<span><em>￥</em>3680.00</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="in_img" class="in_img"><img src="../imges/interest04.jpg" ></div>
+										<div class="in_name">ANDIR手工实木虎纹考级演奏小提琴 初学考级演奏小提琴</div>
+										<div class="in_price">
+											<span><em>￥</em>3450.00</span>
+											<span><em>￥</em>3680.00</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="in_img" class="in_img"><img src="../imges/interest05.jpg" ></div>
+										<div class="in_name">ANDIR小提琴手工实木虎纹演奏小提琴</div>
+										<div class="in_price">
+											<span><em>￥</em>3450.00</span>
+											<span><em>￥</em>3680.00</span>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<div class="foot_top">
+				<div class="container">
+					<ul class="foot_topLeft">
+						<li><i></i><span>七天包退</span></li>
+						<li><i></i><span>正品保障</span></li>
+						<li><i></i><span>好评如潮</span></li>
+						<li><i></i><span>闪电发货</span></li>
+						<li><i></i><span>权威荣誉</span></li>
+					</ul>
+					<div class="foot_topRight">
+						<div class="foot_topR1">
+							<i class="f-icon-tel"></i><span>0371-66957473</span>
+						</div>
+						<div class="foot_topR2">
+							<i class=""></i><span>咨询客服</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="foot_buttom">
+				<div class="container">
+					<div class="fnc">
+						<ul class="help_list">
+							<li>
+								<p>配送于支付</p>
+								<div>
+									<p><a href="#">不方便收货怎么办？</a></p>
+									<p><a href="#">付款以后可以当场验收</a></p>
+									<p><a href="#">免邮政策</a></p>
+								</div>
+							</li>
+							<li>
+								<p>联系我们</p>
+								<div>
+									<p><a href="#">关于我们</a></p>
+									<p><a href="#">合作招商</a></p>
+								</div>
+							</li>
+							<li>
+								<p>新手上路</p>
+								<div>
+									<p><a href="#">隐私声明</a></p>
+									<p><a href="#">订购方式</a></p>
+									<p><a href="#">购物流程</a></p>
+								</div>
+							</li>
+							<li>
+								<p>服务保证</p>
+								<div>
+									<p><a href="#">申请退换货</a></p>
+									<p><a href="#">售后细则</a></p>
+									<p><a href="#">售后总则</a></p>
+								</div>
+							</li>
+							<li>
+								<p>会员中心</p>
+								<div>
+									<p><a href="#">我的订单</a></p>
+									<p><a href="#">我的收藏</a></p>
+									<p><a href="#">资金管理</a></p>
+								</div>
+							</li>
+						</ul>
+						<div class="QR">
+							<div class="QR1">
+								<div><img src="../imges/QR1.jpg" ></div>
+								<div class="code_text">ECJia</div>
+							</div>
+							<div class="QR2">
+								<div><img src="../imges/QR2.png" ></div>
+								<div class="code_text">ECTouch</div>
+							</div>
+						</div>
+					</div>
+					<div class="foot_name">
+						<a href="#"><img src="../imges/footname01.png" ></a>
+						<a href="#"><img src="../imges/footname02.png" ></a>
+						<a href="#"><img src="../imges/footname03.gif" ></a>
+						<a href="#"><img src="../imges/footname04.jpg" ></a>
+						<a href="#"><img src="../imges/footname05.png" ></a>
+						<a href="#" class="foot_link">神州音响网</a>
+						<a href="#" class="foot_link">神州乐器网</a>
+						<a href="#" class="foot_link">快递查询</a>
+						<a href="#" class="foot_link">神州戏曲网</a>
+						<p class="auth">
+							<a href="#">神州音响网</a>
+							<a href="#">神州乐器网</a>
+							<a href="#">神州戏曲网</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
